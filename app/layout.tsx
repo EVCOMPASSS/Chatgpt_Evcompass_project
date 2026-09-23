@@ -1,3 +1,4 @@
+// force new build
 import type { Metadata } from "next";
 import "./globals.css";
 import { CSPostHogProvider } from "./providers";
@@ -22,3 +23,4 @@ export default function RootLayout({
     </html>
   );
 }
+
