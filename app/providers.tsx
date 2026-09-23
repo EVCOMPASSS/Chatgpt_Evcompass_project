@@ -1,19 +1,27 @@
-'use client'
+import type { Metadata } from "next";
+import "./globals.css";
+// @ts-ignore
+import { CSPostHogProvider } from "./providers";
 
-import posthog from 'posthog-js'
-import { PostHogProvider } from 'posthog-js/react'
-import { useEffect } from 'react'
+export const metadata: Metadata = {
+  title: "EVCOMPASS — India's EV Charging Compass",
+  description:
+    "Find EV chargers, plan smarter routes and discover the charging network across India.",
+  keywords: ["EV charging", "EV chargers India", "EV route planner", "EVCOMPASS"],
+};
 
-export function CSPostHogProvider({ children }) {
-  useEffect(() => {
-    if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
-      posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
-        api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
-        person_profiles: 'identified_only',
-      })
-    }
-  }, [])
-
-  return <PostHogProvider client={posthog}>{children}</PostHogProvider>
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>
+        <CSPostHogProvider>
+          {children}
+        </CSPostHogProvider>
+      </body>
+    </html>
+  );
 }
+
 
