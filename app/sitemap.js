@@ -1,7 +1,11 @@
 import type { MetadataRoute } from 'next'
 
+// Tell Next.js to export this route statically
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://evcompass.in' // Replace with your domain[span_1](start_span)[span_1](end_span)
+  const baseUrl = 'https://evcompass.in'
 
   return [
     {
@@ -10,13 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1.0,
     },
-    // Add your other page routes here as you build them:
-    // {
-    //   url: `${baseUrl}/routes`,
-    //   lastModified: new Date(),
-    //   changeFrequency: 'weekly',
-    //   priority: 0.8,
-    // },
   ]
 }
 
