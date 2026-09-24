@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { CSPostHogProvider } from "./providers";
+import CSPostHogProvider from "./providers";
 
 export const metadata: Metadata = {
   title: "EVCOMPASS — India's EV Charging Compass",
