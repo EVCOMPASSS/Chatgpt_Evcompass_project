@@ -135,7 +135,7 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="pulse-dot" />
-            INDIA'S SUPER EV APP - YOUR GUIDE TO ELECTIC MOBILITY
+            INDIA'S SUPER EV APP - YOUR GUIDE TO ELECTRIC MOBILITY
           </div>
 
           <h1>
@@ -173,8 +173,8 @@ export default function Home() {
 
       <section className="ticker" aria-label="EVCOMPASS highlights">
         <div className="ticker-track">
-          {["CHARGERS", "ROUTE PLANNING", "REAL RANGE", "LIVE STATUS", "EV NETWORK", "SMART STOPS",
-            "CHARGERS", "ROUTE PLANNING", "REAL RANGE", "LIVE STATUS", "EV NETWORK", "SMART STOPS"].map((item, i) => (
+          {["EV ROUTE PLANNING", "ALL CHARGERS IN 1 PLACE", "EV CAR COMPARISION", "EV ACCESSORIES", "EV NETWORKING", "EV SAVINGS CALCULATORS",
+            "EV GOVT POLICIES", "HOME CHARGER LISTING"].map((item, i) => (
             <span key={i}><CircleDot size={10} /> {item}</span>
           ))}
         </div>
