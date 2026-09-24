@@ -147,7 +147,7 @@ export default function Home() {
           <p>
             India's EV intelligence platform. 
             Every kilometer planned. Every decision informed. Every journey optimized.
-          <p>
+          </p>
 
           <div className="hero-actions">
             <a className="primary-btn" href="#notify">
