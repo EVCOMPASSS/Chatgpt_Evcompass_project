@@ -135,13 +135,13 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow">
             <span className="pulse-dot" />
-            THE EV CHARGING COMPASS FOR INDIA
+            INDIA'S SUPER EV APP - YOUR GUIDE TO ELECTIC MOBILITY
           </div>
 
           <h1>
-            Charge Smarter.
+            Drive With Data.
             <br />
-            <span>Drive Further </span>
+            <span>Not Opinions. </span>
           </h1>
 
           <p>
