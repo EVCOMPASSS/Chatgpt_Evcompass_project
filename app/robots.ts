@@ -1,12 +1,15 @@
-import { MetadataRoute } from 'next'
+export const dynamic = "force-static";
+
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: 'https://evcompass.in/sitemap.xml',
-  }
+    sitemap: "https://evcompass.in/sitemap.xml",
+  };
 }
+
 
