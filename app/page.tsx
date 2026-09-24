@@ -145,9 +145,9 @@ export default function Home() {
           </h1>
 
           <p>
-            One intelligent place to discover EV chargers, plan charging stops
-            and navigate the electric roads of India.
-          </p>
+            India's EV intelligence platform. 
+            Every kilometer planned. Every decision informed. Every journey optimized.
+          <p>
 
           <div className="hero-actions">
             <a className="primary-btn" href="#notify">
