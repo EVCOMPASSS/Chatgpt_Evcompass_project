@@ -139,9 +139,9 @@ export default function Home() {
           </div>
 
           <h1>
-            Cherry Tension Mat le.
+            Charge Smarter.
             <br />
-            <span>Job lag jayegi October Me.</span>
+            <span>Drive Further </span>
           </h1>
 
           <p>
