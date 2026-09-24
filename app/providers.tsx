@@ -4,7 +4,7 @@ import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 import { useEffect, ReactNode } from 'react'
 
-export function CSPostHogProvider({ children }: { children: ReactNode }) {
+export default function CSPostHogProvider({ children,}: { children: ReactNode }) {
   useEffect(() => {
     if (typeof window !== 'undefined' && process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
