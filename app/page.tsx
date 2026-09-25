@@ -258,7 +258,7 @@ export default function Home() {
         <div className="cta-glow" />
         <div className="cta-icon"><Zap size={26} fill="currentColor" /></div>
         <div className="section-kicker">COMING SOON</div>
-        <h2>The electric road<br /><span>starts here.</span></h2>
+        <h2>The Road <br /><span>Electrified.</span></h2>
         <p>EVCOMPASS.IN is being built. The charger map is getting ready.</p>
         <a className="primary-btn" href="mailto:hello@evcompass.in">
           Stay in the loop <ArrowRight size={17} />
